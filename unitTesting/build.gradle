@@ -1,0 +1,32 @@
+plugins {
+    // Apply the java-library plugin for API and implementation separation.
+    id 'java-library'
+}
+apply plugin: "application"
+
+
+dependencies {
+
+    testImplementation 'org.testng:testng:7.7.1'
+     implementation 'org.seleniumhq.selenium:selenium-java:4.8.1'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.3.1'
+
+}
+repositories {
+    // Use Maven Central for resolving dependencies.
+    
+    mavenCentral()
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir 'src/test'
+            srcDir 'src/resources'
+        }
+    }
+}
+test {
+    // Use TestNG
+    useTestNG()
+}

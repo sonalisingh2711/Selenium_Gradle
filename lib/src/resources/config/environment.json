@@ -1,0 +1,16 @@
+{
+    "UI": {
+        "URL": "https://practicetestautomation.com/practice-test-login/",
+        "USERNAME": "student",
+        "PASSWORD": "Password123"
+    },
+    "API": {
+        "BASE_URL":"https://dummy.restapiexample.com/api/v1"
+    },
+    "DB":{
+        "URL":"jdbc:mysql://localhost/demogradle",
+        "USERNAME":"root",
+        "PASSWORD":"Sona@2711"
+    }
+    
+}
